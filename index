@@ -1,158 +1,57 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mansi Mungee</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-body {
-  font-family: "Georgia", "Times New Roman", serif;
-  background: #f7f3ed;
-  color: #2f2a25;
-  line-height: 1.6;
-}
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">Mansi Mungee</div>
+      <div class="nav-links">
+        <a href="research.html">Research</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
 
-.hero {
-  min-height: 92vh;
-  background:
-    linear-gradient(rgba(35, 30, 24, 0.35), rgba(35, 30, 24, 0.45)),
-    url("images/home/homepage1.jpg") center/cover no-repeat;
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
+    <div class="hero-content">
+      <p class="eyebrow">Ecology · Insects · Remote Sensing</p>
+      <h1>Understanding the little things that run the world.</h1>
+      <p class="intro">
+        I am an ecologist interested in insect biodiversity, species traits,
+        climatic gradients, and the movement of animals through aerial landscapes.
+      </p>
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 28px 7%;
-}
+      <div class="buttons">
+        <a href="research.html" class="btn primary">Explore Research</a>
+        <a href="contact.html" class="btn secondary">Contact Me</a>
+      </div>
+    </div>
+  </header>
 
-.logo {
-  font-size: 1.3rem;
-  letter-spacing: 1px;
-  font-weight: bold;
-}
+  <main>
+    <section class="gallery">
+      <img src="images/home/homepage1.jpg" alt="Field research image" />
+      <img src="images/home/homepage2.jpg" alt="Moth or field image" />
+      <img src="images/home/homepage3.jpg" alt="Ecology research image" />
+    </section>
 
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  margin-left: 28px;
-  font-size: 0.95rem;
-}
+    <section class="about">
+      <h2>Hello, I’m Mansi.</h2>
+      <p>
+        My work explores how insects respond to environmental change across space,
+        time, and elevation. I use a combination of field ecology, morphology,
+        imaging, radar remote sensing, and computational tools to study biodiversity
+        and movement in changing landscapes.
+      </p>
+    </section>
+  </main>
 
-.nav-links a:hover {
-  border-bottom: 1px solid white;
-}
-
-.hero-content {
-  max-width: 760px;
-  margin: auto 7%;
-  padding-bottom: 80px;
-}
-
-.eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 0.8rem;
-  margin-bottom: 18px;
-}
-
-h1 {
-  font-size: clamp(2.8rem, 7vw, 5.8rem);
-  line-height: 1.05;
-  margin-bottom: 24px;
-}
-
-.intro {
-  font-size: 1.15rem;
-  max-width: 620px;
-  margin-bottom: 34px;
-}
-
-.buttons {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.btn {
-  padding: 13px 24px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-size: 0.95rem;
-  transition: 0.25s ease;
-}
-
-.primary {
-  background: white;
-  color: #2f2a25;
-}
-
-.secondary {
-  border: 1px solid white;
-  color: white;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
-  opacity: 0.9;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  padding: 70px 7% 40px;
-}
-
-.gallery img {
-  width: 100%;
-  height: 340px;
-  object-fit: cover;
-  border-radius: 18px;
-}
-
-.about {
-  max-width: 850px;
-  margin: 30px auto 90px;
-  padding: 0 7%;
-  text-align: center;
-}
-
-.about h2 {
-  font-size: 2.2rem;
-  margin-bottom: 20px;
-}
-
-.about p {
-  font-size: 1.08rem;
-  color: #51483f;
-}
-
-footer {
-  text-align: center;
-  padding: 28px;
-  background: #2f2a25;
-  color: #f7f3ed;
-  font-size: 0.9rem;
-}
-
-@media (max-width: 800px) {
-  .navbar {
-    flex-direction: column;
-    gap: 14px;
-  }
-
-  .nav-links a {
-    margin: 0 10px;
-  }
-
-  .gallery {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery img {
-    height: 280px;
-  }
-}
+  <footer>
+    <p>© 2026 Mansi Mungee</p>
+  </footer>
+</body>
+</html>
